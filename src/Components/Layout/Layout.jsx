@@ -1,4 +1,4 @@
-import { Link, Outlet } from 'react-router-dom';
+import { NavLink, Outlet } from 'react-router-dom';
 import Container from '../Container';
 import s from './Layout.module.scss';
 
@@ -7,25 +7,35 @@ const Layout = () => {
     <>
       <header className={s.header}>
         <Container>
-          <nav>
-            <ul>
-              <li>
-                <Link to="/">main</Link>
+          <nav className={s.nav}>
+            <ul className={s.list}>
+              <li className={s.item}>
+                <NavLink to="/" className={s.link}>
+                  main
+                </NavLink>
               </li>
-              <li>
-                <Link to="/home">home</Link>
+              <li className={s.item}>
+                <NavLink to="/home" className={s.link}>
+                  home
+                </NavLink>
               </li>
-              <li>
-                <Link to="/noticeboard">noticeboard</Link>
+              <li className={s.item}>
+                <NavLink to="/noticeboard" className={s.link}>
+                  noticeboard
+                </NavLink>
               </li>
             </ul>
           </nav>
         </Container>
       </header>
 
-      <Outlet />
+      <main className={s.main}>
+        <Container>
+          <Outlet />
+        </Container>
+      </main>
 
-      <footer> 2022 </footer>
+      <footer className={s.footer}> 2022 </footer>
     </>
   );
 };

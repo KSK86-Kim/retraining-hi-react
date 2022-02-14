@@ -1,5 +1,51 @@
 .header {
-  background-color: #68829e;
+  background-color: #16253d;
   padding: 20px 0;
   position: relative;
+}
+
+.main {
+  flex: 1 1 auto;
+
+  background-color: #002c54;
+}
+
+.footer {
+  padding: 10px 0;
+
+  text-align: center;
+
+  // color: #16253d;
+  color: #cd7213;
+  // background-color: #cd7213;
+  background-color: #16253d;
+}
+
+.nav {
+  display: block;
+  // align-items: center;
+  // margin: 10px auto;
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  text-decoration: none;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: #cd7213;
+
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
 }
