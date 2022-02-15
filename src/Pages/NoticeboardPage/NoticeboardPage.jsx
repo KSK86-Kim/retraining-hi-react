@@ -1,8 +1,8 @@
 const NoticeboardPage = () => {
   return (
     <>
-      <div>noticeboard</div>
-      <div>page</div>
+      <div>NoticeboardPage</div>
+      <div>NoticeboardPage</div>
     </>
   );
 };
